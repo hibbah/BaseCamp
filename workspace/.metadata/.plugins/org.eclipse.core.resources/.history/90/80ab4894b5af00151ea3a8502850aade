@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<body>
+
+	<form action='modify' method='post'>
+		<label>USER</label>
+		<input type='text' value='***' readonly><br>
+		<label>COMMENT</label>
+		<textarea>****</textarea>
+		<label>PWD</label>
+		<input type='text'><br>
+		
+	</form>
+
+</body>
+</html>

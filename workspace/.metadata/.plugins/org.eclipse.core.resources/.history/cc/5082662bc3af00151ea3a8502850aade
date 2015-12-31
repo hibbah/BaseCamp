@@ -1,0 +1,44 @@
+package servlets;
+
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+public class ModifyServlet extends HttpServlet {
+
+	// 'MODIFY'버튼을 누를 경우 호출.
+	// 사용자가 입력한 비밀번호가 일치하는 경우, 데이터를 수정
+	@Override
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		Connection conn = null;
+		PreparedStatement stmt = null;
+		String num, pwd;
+		
+		try {
+			// DriverManager를 이용한 java.sql.Driver 인터페이스 구현체를 등록
+			DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+			conn = DriverManager.getConnection(
+				"jdbc:mysql://localhost/basecamp",
+				"root",
+				"1234");
+			
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		// UPDATE `basecamp`.`guest`
+		// SET `CONTENT`='나는야  trashibbah'
+		// WHERE `NUM`='2';
+	}
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>GuestBook</display-name>
+  
+  <!-- 서블릿 선언 
+  <servlet>
+  	<servlet-name>GuestListServlet</servlet-name>
+  	<servlet-class>servlets.ListServlet</servlet-class>
+  </servlet>
+  -->
+  
+  <!-- 서블릿, URL 연결 
+  <servlet-mapping>
+  	<servlet-name>GuestListServlet</servlet-name>
+  	<url-pattern>/guest/list</url-pattern>
+  </servlet-mapping>
+  -->
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>
